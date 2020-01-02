@@ -1,0 +1,5 @@
+//Prevent .php extension from file
+//add .htaccess file
+RewriteEngine On
+RewriteCond % {REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
